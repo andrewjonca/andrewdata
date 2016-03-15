@@ -2,9 +2,21 @@ package andrew
 
 object andrewrunner extends App {
   println("Glorious project started!")
-  val basicTypes = new BasicTypes
-  basicTypes.showVectorType
-
   val data = HWData.load
-  println(s"data: $data")
+  val basicTypes = new BasicTypes
+//  basicTypes.showVectorType
+//  basicTypes.showMatrixType
+  basicTypes.extraProperties
+//  println(s"data: $data")
+  //////////////////
+
+  //val myPlots = new Plots
+  //myPlots.mySimplePlot
+  //myPlots.subplotExample
+  //myPlots.scatterExample
+  //myPlots.leastSquaresFit
+
+  val histPlots = new HistogramPlots(data)
+  //histPlots.plotSomeHistograms
+
 }
